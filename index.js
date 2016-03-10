@@ -50,11 +50,18 @@ RewriteUrlFollower.prototype.start = function () {
     changes.resume()
   }
 
+  setInterval(function () {
+    console.log('queue length = ' + q.length())
+    if (q.length() === 0) changes.resume()
+  }, 3000)
+
   console.log('rewrite package URLs in:', this.couchDB())
 
   changes.on('readable', function () {
     var change = changes.read()
-    if (q.length() === length) changes.pause()
+    if (q.length() === length) {
+      changes.pause()
+    }
 
     if (change.seq % 200 === 0) {
       Request.get({
