@@ -1,6 +1,6 @@
 {
   "name": "rewrite-url-follower",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "rewrite the URLs in couchdb from one registry to another",
   "main": "index.js",
   "bin": "./bin/rewrite-url-follower.js",
