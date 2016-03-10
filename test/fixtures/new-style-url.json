@@ -1,0 +1,84 @@
+{
+  "_id": "@airgap/pork-chop-sandwiches",
+  "_rev": "1-03900ed6a29c3099f079d8a010d15147",
+  "name": "@airgap/pork-chop-sandwiches",
+  "description": "demo fortnight",
+  "dist-tags": {
+    "latest": "1.0.4"
+  },
+  "versions": {
+    "1.0.4": {
+      "name": "@airgap/pork-chop-sandwiches",
+      "version": "1.0.4",
+      "description": "demo fortnight",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/npmo/demo-welcome.git"
+      },
+      "author": "",
+      "license": "ISC",
+      "keywords": [
+        "demo",
+        "banana"
+      ],
+      "dependencies": {},
+      "devDependencies": {},
+      "logo": "http://i.imgur.com/4WFGVJ9.png",
+      "bugs": {
+        "url": "https://github.com/npmo/demo-welcome/issues"
+      },
+      "homepage": "https://github.com/npmo/demo-welcome#readme",
+      "_id": "@airgap/pork-chop-sandwiches@1.0.4",
+      "_shasum": "b07e815c16239cdf0a21128d6669af25b4dfca1d",
+      "_from": ".",
+      "_npmVersion": "3.3.0",
+      "_nodeVersion": "3.2.0",
+      "_npmUser": {
+        "name": "bcoe",
+        "email": "bencoe@gmail.com"
+      },
+      "dist": {
+        "shasum": "b07e815c16239cdf0a21128d6669af25b4dfca1d",
+        "tarball": "http://50.193.14.69:8080/@/@airgap/pork-chop-sandwiches/_attachments/pork-chop-sandwiches-1.0.4.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bcoe",
+          "email": "bencoe@gmail.com"
+        }
+      ],
+      "directories": {}
+    }
+  },
+  "readme": "# this my awesome demo\n\n```js\nvar cool = 99;\n\nfunction () {}\n```\n\nthis is a demo. banana.\n",
+  "maintainers": [
+    {
+      "name": "bcoe",
+      "email": "bencoe@gmail.com"
+    }
+  ],
+  "time": {
+    "modified": "2016-03-09T19:35:11.466Z",
+    "created": "2016-03-09T19:35:11.466Z",
+    "1.0.4": "2016-03-09T19:35:11.466Z"
+  },
+  "homepage": "https://github.com/npmo/demo-welcome#readme",
+  "keywords": [
+    "demo",
+    "banana"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npmo/demo-welcome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/npmo/demo-welcome/issues"
+  },
+  "license": "ISC",
+  "readmeFilename": "README.md",
+  "_attachments": {}
+}
