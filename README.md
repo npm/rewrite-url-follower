@@ -1,5 +1,7 @@
 # Rewrite URL Follower
 
+[![Build Status](https://travis-ci.org/npm/rewrite-url-follower.svg)](https://travis-ci.org/npm/rewrite-url-follower)
+
 npm On-Site and npm-registry-couchapp store package URLs in their
 database. This can be a problem if you write the wrong URL to the database,
 or if you need to migrate data from one URL to another.
