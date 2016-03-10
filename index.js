@@ -82,6 +82,8 @@ RewriteUrlFollower.prototype.couchDB = function () {
 
 RewriteUrlFollower.prototype.shouldRewrite = function (doc) {
   var _this = this
+  if (!doc.versions) return false;
+
   var toRewrite = Object.keys(doc.versions).filter(function (key) {
     var version = doc.versions[key]
     var url = version.dist.tarball
