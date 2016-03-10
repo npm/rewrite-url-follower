@@ -53,5 +53,5 @@ require('yargs')
   .alias('h', 'help')
   .demand(1)
   .strict()
-  .example('rewrite URL to http://10.19.99.196:8080 for couchdb at 172.17.0.1:5984', '$0 rewrite --rewrite=http://10.19.99.196:8080 --host=172.17.0.1 --port=5984')
+  .example('rewrite URL to http://10.19.99.196:8080 for couchdb at 172.17.0.1:5984', 'rewrite-url-follower rewrite --rewrite=http://10.19.99.196:8080 --host=172.17.0.1 --port=5984')
   .argv
