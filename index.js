@@ -2,7 +2,7 @@ var assign = require('lodash.assign')
 var chalk = require('chalk')
 var ChangesStream = require('changes-stream')
 var Request = require('request')
-var npmUrls = require('./lib/npm-urls')
+// var npmUrls = require('./lib/npm-urls')
 var Url = require('url')
 var queue = require('async').queue
 
@@ -98,11 +98,11 @@ RewriteUrlFollower.prototype.rewriteDoc = function (doc) {
 
   Object.keys(doc.versions).forEach(function (key) {
     var version = doc.versions[key]
-    var path = npmUrls.oldTarballUrlToNew(
+    /* var path = npmUrls.oldTarballUrlToNew(
       doc._id,
       version.dist.tarball
-    )
-    doc.versions[key].dist.tarball = Url.resolve(_this.rewrite, path)
+    )*/
+    doc.versions[key].dist.tarball = Url.resolve(_this.rewrite, Url.parse(version.dist.tarball).path)
   })
 }
 

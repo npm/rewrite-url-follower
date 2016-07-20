@@ -8,13 +8,15 @@ require('chai').should()
 describe('rewrite-url-follower', function () {
   describe('rewriteDoc', function () {
     it('handles old urls', function () {
-      var rewriteUrlFollower = new RewriteUrlFollower()
+      var rewriteUrlFollower = new RewriteUrlFollower({
+        rewrite: 'https://127.0.0.1'
+      })
       var doc = JSON.parse(fs.readFileSync(
         './test/fixtures/old-style-url.json'
       ))
       rewriteUrlFollower.rewriteDoc(doc)
       doc.versions['1.0.4'].dist.tarball.should.equal(
-        'http://127.0.0.1:8080/r/required-keys/_attachments/required-keys-1.0.4.tgz'
+        'https://127.0.0.1/required-keys/-/required-keys-1.0.4.tgz'
       )
     })
 
