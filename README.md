@@ -3,11 +3,11 @@
 [![Build Status](https://travis-ci.org/npm/rewrite-url-follower.svg)](https://travis-ci.org/npm/rewrite-url-follower)
 
 npm On-Site and npm-registry-couchapp store package URLs in their
-database. These represent the full canonical path to the a package.
-If the database ends up with the wrong URL for a package you will not
-be able to fetch that package.
+database. These URLs represent the full canonical path to package tarballs.
+If the database ends up with the wrong URL for a package it will become
+inaccessible.
 
-Situations which can result in the wrong URL:
+Situations which can result in an invalid URL:
 - the wrong URL was written to the database
 - the URLs contain the external IP address of the registry and the IP has changed
 - the URLs contain the external domain name of the registry and the domain has changed
